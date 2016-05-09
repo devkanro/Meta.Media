@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75A4897E-5975-46DA-B933-08B1B74DEEC9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Meta.Media</RootNamespace>
+    <AssemblyName>Meta.Media</AssemblyName>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.14295.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NETFX_CORE;WINDOWS_UWP;FF_API_OLD_AVOPTIONS;FF_API_PIX_FMT;FF_API_CONTEXT_SIZE;FF_API_PIX_FMT_DESC;FF_API_AV_REVERSE;FF_API_AUDIOCONVERT;FF_API_CPU_FLAG_MMX2;FF_API_LLS_PRIVATE;FF_API_AVFRAME_LAVC;FF_API_VDPAU;FF_API_GET_CHANNEL_LAYOUT_COMPAT;FF_API_XVMC;FF_API_OPT_TYPE_METADATA;FF_API_DLOG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP;FF_API_OLD_AVOPTIONS;FF_API_PIX_FMT;FF_API_CONTEXT_SIZE;FF_API_PIX_FMT_DESC;FF_API_AV_REVERSE;FF_API_AUDIOCONVERT;FF_API_CPU_FLAG_MMX2;FF_API_LLS_PRIVATE;FF_API_AVFRAME_LAVC;FF_API_VDPAU;FF_API_GET_CHANNEL_LAYOUT_COMPAT;FF_API_XVMC;FF_API_OPT_TYPE_METADATA;FF_API_DLOG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interop\InteropAttribute.cs" />
+    <Compile Include="Interop\InteropFunctionAttribute.cs" />
+    <Compile Include="Interop\UtilFunctionAttribute.cs" />
+    <Compile Include="Interop\Util\AES.cs" />
+    <Compile Include="Interop\Util\AudioFifo.cs" />
+    <Compile Include="Interop\Util\Base64.cs" />
+    <Compile Include="Interop\Util\Blowfish.cs" />
+    <Compile Include="Interop\Util\BPrint.cs" />
+    <Compile Include="Interop\Util\Buffer.cs" />
+    <Compile Include="Interop\Util\Camellia.cs" />
+    <Compile Include="Interop\Util\Cast5.cs" />
+    <Compile Include="Interop\Util\ChannelLayout.cs" />
+    <Compile Include="Interop\Util\CPU.cs" />
+    <Compile Include="Interop\Util\Dictionary.cs" />
+    <Compile Include="Interop\Util\Display.cs" />
+    <Compile Include="Interop\Util\Downmix.cs" />
+    <Compile Include="Interop\Util\Error.cs" />
+    <Compile Include="Interop\Util\Evaluator.cs" />
+    <Compile Include="Interop\Util\Fifo.cs" />
+    <Compile Include="Interop\Util\File.cs" />
+    <Compile Include="Interop\Util\Frame.cs" />
+    <Compile Include="Interop\Util\Hasher.cs" />
+    <Compile Include="Interop\Util\Hmac.cs" />
+    <Compile Include="Interop\Util\ImageUtil.cs" />
+    <Compile Include="Interop\Util\Log.cs" />
+    <Compile Include="Interop\Util\LZO.cs" />
+    <Compile Include="Interop\Util\Math.cs" />
+    <Compile Include="Interop\Util\Memory.cs" />
+    <Compile Include="Interop\Util\MotionVector.cs" />
+    <Compile Include="Interop\Util\Option.cs" />
+    <Compile Include="Interop\Util\PixelDescriptor.cs" />
+    <Compile Include="Interop\Util\PixelFormat.cs" />
+    <Compile Include="Interop\Util\Rational.cs" />
+    <Compile Include="Interop\Util\SampleFormat.cs" />
+    <Compile Include="Interop\Util\String.cs" />
+    <Compile Include="Interop\Util\Util.cs" />
+    <Compile Include="Interop\Util\Version.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Meta.Media.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interop\Codec\" />
+    <Folder Include="Interop\Device\" />
+    <Folder Include="Interop\Filter\" />
+    <Folder Include="Interop\Format\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

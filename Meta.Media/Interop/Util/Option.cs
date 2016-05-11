@@ -364,35 +364,35 @@ namespace Meta.Media.Interop.Util
 
     // TODO: Comment.
     [UtilFunction("av_set_options_string")]
-    public unsafe delegate int SetOptionsString(void* ctx, char* opts, char* keyValSep, char* pairsSep);
+    public unsafe delegate int SetOptionsString(void* ctx, byte* opts, byte* keyValSep, byte* pairsSep);
     [UtilFunction("av_opt_set_from_string")]
-    public unsafe delegate int OptionSetFromString(void* ctx, char* opts, char** shorthand, char* keyValSep, char* pairsSep);
+    public unsafe delegate int OptionSetFromString(void* ctx, byte* opts, byte** shorthand, byte* keyValSep, byte* pairsSep);
     [UtilFunction("av_opt_free")]
     public unsafe delegate void OptionFree(void* obj);
     [UtilFunction("av_opt_flag_is_set")]
-    public unsafe delegate int OptionFlagIsSet(void* obj, char* fieldName, char* flagName);
+    public unsafe delegate int OptionFlagIsSet(void* obj, byte* fieldName, byte* flagName);
     [UtilFunction("av_opt_set_dict")]
     public unsafe delegate int OptionSetDict(void* obj, DictionaryPtr* options);
     [UtilFunction("av_opt_set_dict2")]
     public unsafe delegate int OptionSetDict2(void* obj, DictionaryPtr* options, int searchFlags);
     [UtilFunction("av_opt_get_key_value")]
-    public unsafe delegate int OptionGetKeyValue(char** ropts, char* keyValSep, char* pairsSep, uint flags, char** rkey, char** rval);
+    public unsafe delegate int OptionGetKeyValue(byte** ropts, byte* keyValSep, byte* pairsSep, uint flags, byte** rkey, byte** rval);
     [UtilFunction("av_opt_eval_flags")]
-    public unsafe delegate int OptionEvalFlags(void* obj, Option* o, char* val, int* flagsOut);
+    public unsafe delegate int OptionEvalFlags(void* obj, Option* o, byte* val, int* flagsOut);
     [UtilFunction("av_opt_eval_int")]
-    public unsafe delegate int OptionEvalInt(void* obj, Option* o, char* val, int* intOut);
+    public unsafe delegate int OptionEvalInt(void* obj, Option* o, byte* val, int* intOut);
     [UtilFunction("av_opt_eval_int64")]
-    public unsafe delegate int OptionEvalInt64(void* obj, Option* o, char* val, long* int64Out);
+    public unsafe delegate int OptionEvalInt64(void* obj, Option* o, byte* val, long* int64Out);
     [UtilFunction("av_opt_eval_float")]
-    public unsafe delegate int OptionEvalFloat(void* obj, Option* o, char* val, float* floatOut);
+    public unsafe delegate int OptionEvalFloat(void* obj, Option* o, byte* val, float* floatOut);
     [UtilFunction("av_opt_eval_double")]
-    public unsafe delegate int OptionEvalDouble(void* obj, Option* o, char* val, double* doubleOut);
+    public unsafe delegate int OptionEvalDouble(void* obj, Option* o, byte* val, double* doubleOut);
     [UtilFunction("av_opt_eval_q")]
-    public unsafe delegate int OptionEvalQ(void* obj,  Option* o,  char* val, Rational* qOut);
+    public unsafe delegate int OptionEvalQ(void* obj,  Option* o,  byte* val, Rational* qOut);
     [UtilFunction("av_opt_find")]
-    public unsafe delegate  Option* OptionFind(void* obj, char* name, char* unit, int optFlags, int searchFlags);
+    public unsafe delegate  Option* OptionFind(void* obj, byte* name, byte* unit, int optFlags, int searchFlags);
     [UtilFunction("av_opt_find2")]
-    public unsafe delegate  Option* OptionFind2(void* obj, char* name, char* unit, int optFlags, int searchFlags, void** targetObj);
+    public unsafe delegate  Option* OptionFind2(void* obj, byte* name, byte* unit, int optFlags, int searchFlags, void** targetObj);
     [UtilFunction("av_opt_next")]
     public unsafe delegate  Option* OptionNext(void* obj, Option* prev);
     [UtilFunction("av_opt_child_next")]
@@ -400,59 +400,59 @@ namespace Meta.Media.Interop.Util
     [UtilFunction("av_opt_child_class_next")]
     public delegate  ClassPtr OptionChildClassNext(ClassPtr parent, ClassPtr prev);
     [UtilFunction("av_opt_set")]
-    public unsafe delegate int OptionSet(void* obj, char* name, char* val, int searchFlags);
+    public unsafe delegate int OptionSet(void* obj, byte* name, byte* val, int searchFlags);
     [UtilFunction("av_opt_set_int")]
-    public unsafe delegate int OptionSetInt(void* obj, char* name, long val, int searchFlags);
+    public unsafe delegate int OptionSetInt(void* obj, byte* name, long val, int searchFlags);
     [UtilFunction("av_opt_set_double")]
-    public unsafe delegate int OptionSetDouble(void* obj, char* name, double val, int searchFlags);
+    public unsafe delegate int OptionSetDouble(void* obj, byte* name, double val, int searchFlags);
     [UtilFunction("av_opt_set_q")]
-    public unsafe delegate int OptionSetQ(void* obj,  char* name, Rational val, int searchFlags);
+    public unsafe delegate int OptionSetQ(void* obj,  byte* name, Rational val, int searchFlags);
     [UtilFunction("av_opt_set_bin")]
-    public unsafe delegate int OptionSetBin(void* obj,  char* name,  byte* val, int size, int searchFlags);
+    public unsafe delegate int OptionSetBin(void* obj,  byte* name,  byte* val, int size, int searchFlags);
     [UtilFunction("av_opt_set_image_size")]
-    public unsafe delegate int OptionSetImageSize(void* obj,  char* name, int w, int h, int searchFlags);
+    public unsafe delegate int OptionSetImageSize(void* obj,  byte* name, int w, int h, int searchFlags);
     [UtilFunction("av_opt_set_pixel_fmt")]
-    public unsafe delegate int OptionSetPixelFmt(void* obj,  char* name, PixelFormat fmt, int searchFlags);
+    public unsafe delegate int OptionSetPixelFmt(void* obj,  byte* name, PixelFormat fmt, int searchFlags);
     [UtilFunction("av_opt_set_sample_fmt")]
-    public unsafe delegate int OptionSetSampleFmt(void* obj,  char* name, SampleFormat fmt, int searchFlags);
+    public unsafe delegate int OptionSetSampleFmt(void* obj,  byte* name, SampleFormat fmt, int searchFlags);
     [UtilFunction("av_opt_set_video_rate")]
-    public unsafe delegate int OptionSetVideoRate(void* obj,  char* name, Rational val, int searchFlags);
+    public unsafe delegate int OptionSetVideoRate(void* obj,  byte* name, Rational val, int searchFlags);
     [UtilFunction("av_opt_set_channel_layout")]
-    public unsafe delegate int OptionSetChannelLayout(void* obj, char* name, long chLayout, int searchFlags);
+    public unsafe delegate int OptionSetChannelLayout(void* obj, byte* name, long chLayout, int searchFlags);
     [UtilFunction("av_opt_get")]
-    public unsafe delegate int OptionGet(void* obj,  char* name, int searchFlags, byte** outVal);
+    public unsafe delegate int OptionGet(void* obj,  byte* name, int searchFlags, byte** outVal);
     [UtilFunction("av_opt_get_int")]
-    public unsafe delegate int OptionGetInt(void* obj,  char* name, int searchFlags, long* outVal);
+    public unsafe delegate int OptionGetInt(void* obj,  byte* name, int searchFlags, long* outVal);
     [UtilFunction("av_opt_get_double")]
-    public unsafe delegate int OptionGetDouble(void* obj,  char* name, int searchFlags, double* outVal);
+    public unsafe delegate int OptionGetDouble(void* obj,  byte* name, int searchFlags, double* outVal);
     [UtilFunction("av_opt_get_q")]
-    public unsafe delegate int OptionGetQ(void* obj,  char* name, int searchFlags, Rational* outVal);
+    public unsafe delegate int OptionGetQ(void* obj,  byte* name, int searchFlags, Rational* outVal);
     [UtilFunction("av_opt_get_image_size")]
-    public unsafe delegate int OptionGetImageSize(void* obj,  char* name, int searchFlags, int* wOut, int* hOut);
+    public unsafe delegate int OptionGetImageSize(void* obj,  byte* name, int searchFlags, int* wOut, int* hOut);
     [UtilFunction("av_opt_get_pixel_fmt")]
-    public unsafe delegate int OptionGetPixelFmt(void* obj,  char* name, int searchFlags, PixelFormat * outFmt);
+    public unsafe delegate int OptionGetPixelFmt(void* obj,  byte* name, int searchFlags, PixelFormat * outFmt);
     [UtilFunction("av_opt_get_sample_fmt")]
-    public unsafe delegate int OptionGetSampleFmt(void* obj,  char* name, int searchFlags, SampleFormat * outFmt);
+    public unsafe delegate int OptionGetSampleFmt(void* obj,  byte* name, int searchFlags, SampleFormat * outFmt);
     [UtilFunction("av_opt_get_video_rate")]
-    public unsafe delegate int OptionGetVideoRate(void* obj,  char* name, int searchFlags, Rational* outVal);
+    public unsafe delegate int OptionGetVideoRate(void* obj,  byte* name, int searchFlags, Rational* outVal);
     [UtilFunction("av_opt_get_channel_layout")]
-    public unsafe delegate int OptionGetChannelLayout(void* obj,  char* name, int searchFlags, long* chLayout);
+    public unsafe delegate int OptionGetChannelLayout(void* obj,  byte* name, int searchFlags, long* chLayout);
     [UtilFunction("av_opt_get_dict_val")]
-    public unsafe delegate int OptionGetDictVal(void* obj,  char* name, int searchFlags, DictionaryPtr* outVal);
+    public unsafe delegate int OptionGetDictVal(void* obj,  byte* name, int searchFlags, DictionaryPtr* outVal);
     [UtilFunction("av_opt_ptr")]
-    public unsafe delegate void* option_ptr( ClassPtr avclass, void* obj,  char* name);
+    public unsafe delegate void* option_ptr( ClassPtr avclass, void* obj,  byte* name);
     [UtilFunction("av_opt_freep_ranges")]
     public unsafe delegate void OptionFreepRanges(OptionRanges** ranges);
     [UtilFunction("av_opt_query_ranges")]
-    public unsafe delegate int OptionQueryRanges(OptionRanges** ranges, void* obj, char* key, int flags);
+    public unsafe delegate int OptionQueryRanges(OptionRanges** ranges, void* obj, byte* key, int flags);
     [UtilFunction("av_opt_copy")]
     public unsafe delegate int OptionCopy(void* dest, void* src);
     [UtilFunction("av_opt_query_ranges_default")]
-    public unsafe delegate int OptionQueryRangesDefault(OptionRanges** ranges, void* obj, char* key, int flags);
+    public unsafe delegate int OptionQueryRangesDefault(OptionRanges** ranges, void* obj, byte* key, int flags);
     [UtilFunction("av_opt_is_set_to_default")]
     public unsafe delegate int OptionIsSetToDefault(void* obj,  Option* o);
     [UtilFunction("av_opt_is_set_to_default_by_name")]
-    public unsafe delegate int OptionIsSetToDefaultByName(void* obj, char* name, int searchFlags);
+    public unsafe delegate int OptionIsSetToDefaultByName(void* obj, byte* name, int searchFlags);
     [UtilFunction("av_opt_serialize")]
-    public unsafe delegate int OptionSerialize(void* obj, int optFlags, int flags, char** buffer,  char keyValSep,  char pairsSep);
+    public unsafe delegate int OptionSerialize(void* obj, int optFlags, int flags, byte** buffer,  byte keyValSep,  byte pairsSep);
 }

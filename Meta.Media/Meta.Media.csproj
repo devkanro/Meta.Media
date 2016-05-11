@@ -138,6 +138,7 @@
     <Compile Include="Interop\Util\Memory.cs" />
     <Compile Include="Interop\Util\MotionVector.cs" />
     <Compile Include="Interop\Util\Option.cs" />
+    <Compile Include="Interop\Util\ParseUtils.cs" />
     <Compile Include="Interop\Util\PixelDescriptor.cs" />
     <Compile Include="Interop\Util\PixelFormat.cs" />
     <Compile Include="Interop\Util\Rational.cs" />

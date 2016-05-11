@@ -141,6 +141,7 @@
     <Compile Include="Interop\Util\ParseUtils.cs" />
     <Compile Include="Interop\Util\PixelDescriptor.cs" />
     <Compile Include="Interop\Util\PixelFormat.cs" />
+    <Compile Include="Interop\Util\PixelUtil.cs" />
     <Compile Include="Interop\Util\Rational.cs" />
     <Compile Include="Interop\Util\SampleFormat.cs" />
     <Compile Include="Interop\Util\String.cs" />
